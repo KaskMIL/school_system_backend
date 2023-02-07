@@ -3,11 +3,9 @@
 one:
   nombre: MyString
   apellido: MyString
-  familia_id: 1
-  curso_id: 1
+  familia: one
 
 two:
   nombre: MyString
   apellido: MyString
-  familia_id: 1
-  curso_id: 1
+  familia: two
