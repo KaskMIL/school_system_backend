@@ -1,2 +1,0 @@
-class Familia < ApplicationRecord
-end
