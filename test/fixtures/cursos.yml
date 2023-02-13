@@ -1,9 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  nombre_curso: MyString
-  alumno_id: 1
+  año: MyString
+  seccion: MyString
+  nivel: MyString
+  cantidad: 1
 
 two:
-  nombre_curso: MyString
-  alumno_id: 1
+  año: MyString
+  seccion: MyString
+  nivel: MyString
+  cantidad: 1

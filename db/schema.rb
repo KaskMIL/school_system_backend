@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_13_152400) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_13_183411) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,11 +23,31 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_13_152400) do
     t.index ["family_id"], name: "index_alumnos_on_family_id"
   end
 
+  create_table "cursos", force: :cascade do |t|
+    t.string "año"
+    t.string "seccion"
+    t.string "nivel"
+    t.integer "cantidad", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "families", force: :cascade do |t|
     t.string "apellido"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "inscriptions", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "curso_id", null: false
+    t.bigint "alumno_id", null: false
+    t.index ["alumno_id"], name: "index_inscriptions_on_alumno_id"
+    t.index ["curso_id"], name: "index_inscriptions_on_curso_id"
+  end
+
   add_foreign_key "alumnos", "families"
+  add_foreign_key "inscriptions", "alumnos"
+  add_foreign_key "inscriptions", "cursos"
 end

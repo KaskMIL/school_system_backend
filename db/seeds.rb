@@ -7,3 +7,13 @@ alumno3 = Alumno.create(nombre: 'Guadalupe', apellido: 'Milanesi', family: famil
 
 alumno4 = Alumno.create(nombre: 'Marcela', apellido: 'Lopez', family: familia2)
 alumno5 = Alumno.create(nombre: 'Sebastian', apellido: 'Lopez', family: familia2)
+
+curso1 = Curso.create(año: 'Primero', seccion: 'A', nivel: 'Primaria')
+curso2 = Curso.create(año: 'Segundo', seccion: 'B', nivel: 'Secundaria')
+
+insc1 = Inscription.create(curso: curso1, alumno: alumno1)
+insc2 = Inscription.create(curso: curso1, alumno: alumno2)
+insc3 = Inscription.create(curso: curso1, alumno: alumno3)
+
+insc4 = Inscription.create(curso: curso2, alumno: alumno4)
+insc4 = Inscription.create(curso: curso2, alumno: alumno5)
