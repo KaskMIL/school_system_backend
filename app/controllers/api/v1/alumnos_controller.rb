@@ -1,23 +1,20 @@
 class Api::V1::AlumnosController < ApplicationController
   def index
     @alumnos = Alumno.all
-
     render json: @alumnos
   end
 
   def show
     @alumno = Alumno.find(params[:id])
-
     render json: @alumno
   end
 
   def create
     @alumno = Alumno.new(alumno_params)
-
     if @alumno.save
-      render json: { message: 'Alumno creado', alumno: @alumno }, status: 200
+      render json: { message: 'Alumno creado con exito!', alumno: @alumno }
     else
-      render json: { error: 'No se pudo crear el alumno' }, status: 404
+      render json: { error: 'No se pudo crear el alumno, revise los parametros!' }
     end
   end
 
