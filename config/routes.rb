@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :alumnos, only: [:index, :show, :create, :destroy]
-      resources :cursos, only: [:index, :show]
-      resources :families, only: [:index, :show]
-      resources :inscriptions, only: [:index, :show]
+      resources :alumnos
+      resources :cursos
+      resources :families
+      resources :inscriptions
+      resources :years
+      resources :concepts
+      resources :payments
     end
   end
   # resources :alumnos
