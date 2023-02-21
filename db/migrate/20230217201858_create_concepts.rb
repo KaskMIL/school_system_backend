@@ -3,7 +3,7 @@ class CreateConcepts < ActiveRecord::Migration[7.0]
     create_table :concepts do |t|
       t.string :nombre
       t.integer :precio
-      t.boolean :saldado
+      t.boolean :saldado, :default => false
 
       t.timestamps
     end
