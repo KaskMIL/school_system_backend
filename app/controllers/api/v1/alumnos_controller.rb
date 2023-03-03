@@ -12,7 +12,7 @@ class Api::V1::AlumnosController < ApplicationController
   def create
     @alumno = Alumno.new(alumno_params)
     if @alumno.save
-      render json: { message: 'Alumno creado con exito!', alumno: @alumno }
+      render json: { message: 'Alumno creado con exito!', alumno: @alumno, status: 200 }
     else
       render json: { error: 'No se pudo crear el alumno, revise los parametros!' }
     end
