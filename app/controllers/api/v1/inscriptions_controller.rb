@@ -13,9 +13,8 @@ class Api::V1::InscriptionsController < ApplicationController
 
   def create
     @inscription = Inscription.new(inscription_params)
-
     if @inscription.save
-      render json: { msg: 'Inscripcion creado con exito!', inscription: @inscription }
+      render json: { message: 'Inscripcion creado con exito!', inscription: @inscription, status: 200 }
     else
       render json: { error: 'No se ha podido crear la inscripcion, revise los parametros!' }
     end
@@ -33,6 +32,6 @@ class Api::V1::InscriptionsController < ApplicationController
   private
 
   def inscription_params
-    params.require(:inscription).permit(:curso, :alumno)
+    params.require(:inscription).permit(:curso_id, :alumno_id)
   end
 end
