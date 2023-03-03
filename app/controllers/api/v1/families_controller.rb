@@ -15,7 +15,7 @@ class Api::V1::FamiliesController < ApplicationController
     @family = Family.new(family_params)
 
     if @family.save
-      render json: { msg: 'Familia creada con exito!', familia: @family }
+      render json: { msg: 'Familia creada con exito!', familia: @family, status: 200 }
     else
       render json: { error: 'No se ha podido crear la familia, revise los parametros!' }
     end
