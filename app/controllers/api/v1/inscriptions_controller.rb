@@ -16,7 +16,7 @@ class Api::V1::InscriptionsController < ApplicationController
     if @inscription.save
       render json: { message: 'Inscripcion creado con exito!', inscription: @inscription, status: 200 }
     else
-      render json: { error: 'No se ha podido crear la inscripcion, revise los parametros!' }
+      render json: { error: 'No se ha podido crear la inscripcion, revise los parametros!', status: 400 }
     end
   end
 
