@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_17_224703) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_03_173828) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,6 +20,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_17_224703) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "family_id", null: false
+    t.integer "dni"
+    t.date "fecha_de_nacimiento"
     t.index ["family_id"], name: "index_alumnos_on_family_id"
   end
 
@@ -46,6 +48,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_17_224703) do
     t.string "apellido"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "direccion"
+    t.string "nombre_responsable_1"
+    t.string "nombre_responsable_2"
+    t.string "email"
+    t.integer "telefono"
+    t.string "ocupacion"
   end
 
   create_table "inscriptions", force: :cascade do |t|
