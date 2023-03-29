@@ -1,24 +1,63 @@
-# README
+# School System Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Is an API that provides 
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
+- PostgreSQL
+## Live Demo
 
-* System dependencies
+- Coming soon...
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running, follow these simple steps:
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+- Ruby 3.0.1 or newer
+- Rails 7.0.4 or newer
+- Git
+- NPM
+- PostgresSQL
+- Web browser
 
-* Services (job queues, cache servers, search engines, etc.)
+### Setup
+```
+git clone git@github.com:KaskMIL/school_system_backend.git
+cd school_system_backend
+```
 
-* Deployment instructions
+### Install
 
-* ...
+Run `bundle install`
+
+### Usage
+
+Execute the following commands:
+- rails db:create
+- rails db:migrate
+- rails db:seed
+- rails s    
+## Authors
+
+👤 **Tom Milanesi**
+
+- GitHub: [@TomMilanesi](https://github.com/KaskMIL)
+- Twitter: [@TomMilanesi](https://twitter.com/TomasMilanesi)
+- LinkedIn: [Tomas Milanesi](https://www.linkedin.com/in/tomas-milanesi-3427bb185/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
