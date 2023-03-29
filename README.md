@@ -1,6 +1,6 @@
 # School System Backend
 
-> Is an API that provides 
+> Is an API that provides the controllers and models to administrate the database for a School.
 
 ## Built With
 
