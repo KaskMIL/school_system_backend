@@ -2,10 +2,10 @@
 
 one:
   nombre: MyString
-  apellido: MyString
-  family: one
+  precio: 1
+  saldado: false
 
 two:
   nombre: MyString
-  apellido: MyString
-  family: two
+  precio: 1
+  saldado: false

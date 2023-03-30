@@ -1,6 +1,6 @@
 require "test_helper"
 
-class AlumnosControllerTest < ActionDispatch::IntegrationTest
+class FamilyTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
