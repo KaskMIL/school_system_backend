@@ -4,5 +4,5 @@ class Alumno < ApplicationRecord
   has_one :curso, through: :inscription
   has_many :payments, dependent: :delete_all
   has_many :years, dependent: :delete_all
-  has_many :concepts, through: :years, dependent: :delete_all
+  #has_many :concepts, through: :years, dependent: :delete_all
 end

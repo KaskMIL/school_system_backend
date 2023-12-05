@@ -32,6 +32,6 @@ class Api::V1::YearsController < ApplicationController
   private
 
   def year_params
-    params.require(:year).permit(:year, :alumno)
+    params.require(:year).permit(:year, :alumno_id)
   end
 end
